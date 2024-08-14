@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # load_dotenv()
 # api_key = os.getenv("MY_API_KEY")
 
-api_key = st.secrets("MY_API_KEY")
+api_key = st.secrets["MY_API_KEY"]
 
 genai.configure(api_key=api_key)
 
