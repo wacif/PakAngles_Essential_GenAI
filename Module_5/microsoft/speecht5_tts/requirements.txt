@@ -1,0 +1,6 @@
+transformers
+streamlit
+datasets
+soundfile
+torch
+ipython
