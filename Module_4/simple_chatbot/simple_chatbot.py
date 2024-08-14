@@ -3,7 +3,10 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-st.secrets("MY_API_KEY")
+headers ={
+    "authorization" : st.secrets("MY_API_KEY"),
+    "content-type" : "application/json"
+}
 
 load_dotenv()
 api_key = os.getenv("MY_API_KEY")
