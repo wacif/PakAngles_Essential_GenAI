@@ -3,13 +3,10 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-headers ={
-    "authorization" : st.secrets("MY_API_KEY"),
-    "content-type" : "application/json"
-}
+# load_dotenv()
+# api_key = os.getenv("MY_API_KEY")
 
-load_dotenv()
-api_key = os.getenv("MY_API_KEY")
+api_key = st.secrets("MY_API_KEY")
 
 genai.configure(api_key=api_key)
 
