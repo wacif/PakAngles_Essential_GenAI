@@ -21,3 +21,9 @@ x = "Python"
 y = "is"
 z = "awesome"
 print(x, y, z)
+x = "awesome"
+
+def myfunc():
+    print("Python is " + x)
+
+myfunc()
